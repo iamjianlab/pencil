@@ -105,8 +105,7 @@ function scrollToSection(target: string) {
 
       <section class="hero-section reveal-fade" id="intro">
         <div class="hero-copy">
-          <span class="eyebrow">Concert Ticket Assistant</span>
-          <h1>让每场演出，<br />都不留遗憾。</h1>
+          <h1>让每场演出都不留遗憾。</h1>
           <p>
             基于官方规则打造的演唱会智能助手。提前获取开票提醒、完成准备清单，从容直达官方入口。安全、合规、高效。
           </p>
@@ -155,7 +154,6 @@ function scrollToSection(target: string) {
                 <span>倒计时提醒</span>
                 <strong>距开票还有 02:18:36</strong>
               </div>
-              <div class="dashboard-badge">官方规则已同步</div>
             </article>
 
             <div class="dashboard-grid">
@@ -177,7 +175,6 @@ function scrollToSection(target: string) {
 
       <section class="feature-section reveal-fade" id="features">
         <div class="section-heading">
-          <span class="eyebrow eyebrow--center">核心功能</span>
           <h2>为抢票保驾护航</h2>
         </div>
 
@@ -196,7 +193,6 @@ function scrollToSection(target: string) {
 
       <section class="service-section reveal-fade" id="services">
         <div class="section-heading">
-          <span class="eyebrow eyebrow--center">提供服务</span>
           <h2>全面服务矩阵，从购票到入场</h2>
         </div>
 
@@ -385,7 +381,7 @@ function scrollToSection(target: string) {
 }
 
 .hero-visual {
-  width: min(100%, 1200px);
+  width: 100%;
   min-height: 600px;
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
