@@ -1,0 +1,3670 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "cover001",
+      "x": 0,
+      "y": 0,
+      "name": "Concert Ticket Assistant / UI Design Overview",
+      "theme": {
+        "Mode": "Light",
+        "Base": "Neutral",
+        "Accent": "Default"
+      },
+      "clip": true,
+      "width": 1600,
+      "height": 1080,
+      "fill": "#F6F8FB",
+      "layout": "none",
+      "children": [
+        {
+          "type": "text",
+          "id": "coverTitle",
+          "x": 72,
+          "y": 64,
+          "fill": "#0F172A",
+          "content": "Concert Ticket Assistant",
+          "lineHeight": 1.1,
+          "fontFamily": "Inter",
+          "fontSize": 40,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "coverSub",
+          "x": 72,
+          "y": 116,
+          "fill": "#475569",
+          "content": "Web UI design document derived from PRD: search, reminders, preparation checklist, official purchase links, and ticket wallet.",
+          "lineHeight": 1.5,
+          "fontFamily": "Inter",
+          "fontSize": 18,
+          "fontWeight": "400"
+        },
+        {
+          "type": "frame",
+          "id": "coverHero",
+          "x": 72,
+          "y": 176,
+          "name": "Design principles",
+          "clip": true,
+          "width": 1456,
+          "height": 220,
+          "fill": "#FFFFFF",
+          "cornerRadius": 24,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "heroLabel",
+              "x": 36,
+              "y": 28,
+              "fill": "#2563EB",
+              "content": "Design direction",
+              "lineHeight": 1.4,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "heroHeadline",
+              "x": 36,
+              "y": 56,
+              "fill": "#0F172A",
+              "content": "A trustworthy ticketing companion focused on speed, clarity, and compliant official entry points.",
+              "lineHeight": 1.18,
+              "fontFamily": "Inter",
+              "fontSize": 34,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "heroPrinciples",
+              "x": 36,
+              "y": 130,
+              "fill": "#475569",
+              "content": "1. Home is a personal ticketing dashboard.  2. Event detail centralizes decision-making.  3. Reminder and preparation status stay visible near purchase actions.  4. Official/manual purchase compliance is repeated at critical touchpoints.",
+              "lineHeight": 1.7,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "400"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "palettePrimary",
+          "x": 72,
+          "y": 432,
+          "width": 332,
+          "height": 156,
+          "fill": "#0F172A",
+          "cornerRadius": 20,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "pal1Label",
+              "x": 24,
+              "y": 22,
+              "fill": "#CBD5E1",
+              "content": "Primary",
+              "lineHeight": 1.4,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "pal1Value",
+              "x": 24,
+              "y": 54,
+              "fill": "#FFFFFF",
+              "content": "#0F172A",
+              "lineHeight": 1.2,
+              "fontFamily": "Inter",
+              "fontSize": 30,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "pal1Desc",
+              "x": 24,
+              "y": 102,
+              "fill": "#CBD5E1",
+              "content": "Brand, navigation, titles, trust-heavy information.",
+              "lineHeight": 1.5,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "400"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "paletteAccent",
+          "x": 420,
+          "y": 432,
+          "width": 332,
+          "height": 156,
+          "fill": "#22C55E",
+          "cornerRadius": 20,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "pal2Label",
+              "x": 24,
+              "y": 22,
+              "fill": "#14532D",
+              "content": "Official action",
+              "lineHeight": 1.4,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "pal2Value",
+              "x": 24,
+              "y": 54,
+              "fill": "#052E16",
+              "content": "#22C55E",
+              "lineHeight": 1.2,
+              "fontFamily": "Inter",
+              "fontSize": 30,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "pal2Desc",
+              "x": 24,
+              "y": 102,
+              "fill": "#14532D",
+              "content": "Primary CTA, official links, prepared states, positive confirmations.",
+              "lineHeight": 1.5,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "400"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "paletteWarn",
+          "x": 768,
+          "y": 432,
+          "width": 332,
+          "height": 156,
+          "fill": "#F59E0B",
+          "cornerRadius": 20,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "pal3Label",
+              "x": 24,
+              "y": 22,
+              "fill": "#78350F",
+              "content": "Urgency",
+              "lineHeight": 1.4,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "pal3Value",
+              "x": 24,
+              "y": 54,
+              "fill": "#451A03",
+              "content": "#F59E0B",
+              "lineHeight": 1.2,
+              "fontFamily": "Inter",
+              "fontSize": 30,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "pal3Desc",
+              "x": 24,
+              "y": 102,
+              "fill": "#78350F",
+              "content": "Countdowns, near-sale warnings, unfinished critical checklist items.",
+              "lineHeight": 1.5,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "400"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "paletteDanger",
+          "x": 1116,
+          "y": 432,
+          "width": 412,
+          "height": 156,
+          "fill": "#FFFFFF",
+          "cornerRadius": 20,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#FECACA"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "pal4Label",
+              "x": 24,
+              "y": 22,
+              "fill": "#DC2626",
+              "content": "Compliance / risk",
+              "lineHeight": 1.4,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "pal4Value",
+              "x": 24,
+              "y": 54,
+              "fill": "#991B1B",
+              "content": "Manual purchase only",
+              "lineHeight": 1.2,
+              "fontFamily": "Inter",
+              "fontSize": 30,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "pal4Desc",
+              "x": 24,
+              "y": 102,
+              "fill": "#7F1D1D",
+              "content": "No auto-login, no auto-click, no bypass. Always guide users to official channels and manual checkout.",
+              "lineHeight": 1.5,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "400"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "architectureCard",
+          "x": 72,
+          "y": 628,
+          "width": 704,
+          "height": 380,
+          "fill": "#FFFFFF",
+          "cornerRadius": 24,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "archTitle",
+              "x": 28,
+              "y": 28,
+              "fill": "#0F172A",
+              "content": "Information architecture",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "archBody",
+              "x": 28,
+              "y": 72,
+              "fill": "#334155",
+              "content": "Home = distribution and current priorities\nEvent detail = decision center\nMy Following = reminder management\nTicket Wallet = post-purchase organization\nSettings = notification, calendar, privacy, account controls",
+              "lineHeight": 1.8,
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "400"
+            },
+            {
+              "type": "frame",
+              "id": "chipRowA",
+              "x": 28,
+              "y": 224,
+              "width": 160,
+              "height": 46,
+              "fill": "#DBEAFE",
+              "cornerRadius": 999,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "chipHome",
+                  "x": 28,
+                  "y": 14,
+                  "fill": "#1D4ED8",
+                  "content": "首页 / Dashboard",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "chipRowB",
+              "x": 204,
+              "y": 224,
+              "width": 160,
+              "height": 46,
+              "fill": "#DCFCE7",
+              "cornerRadius": 999,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "chipDetail",
+                  "x": 26,
+                  "y": 14,
+                  "fill": "#166534",
+                  "content": "详情 / Decision",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "chipRowC",
+              "x": 380,
+              "y": 224,
+              "width": 148,
+              "height": 46,
+              "fill": "#FEF3C7",
+              "cornerRadius": 999,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "chipFollow",
+                  "x": 26,
+                  "y": 14,
+                  "fill": "#92400E",
+                  "content": "关注 / Manage",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "chipRowD",
+              "x": 544,
+              "y": 224,
+              "width": 132,
+              "height": 46,
+              "fill": "#F1F5F9",
+              "cornerRadius": 999,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "chipWallet",
+                  "x": 24,
+                  "y": 14,
+                  "fill": "#334155",
+                  "content": "票夹 / After",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "archNote",
+              "x": 28,
+              "y": 302,
+              "fill": "#64748B",
+              "content": "Navigation stays top-aligned for desktop. Deep pages expose breadcrumb and status chips to reduce context switching.",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "400"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "componentsCard",
+          "x": 800,
+          "y": 628,
+          "width": 728,
+          "height": 380,
+          "fill": "#FFFFFF",
+          "cornerRadius": 24,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "compTitle",
+              "x": 28,
+              "y": 28,
+              "fill": "#0F172A",
+              "content": "Core UI patterns",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "primaryButton",
+              "x": 28,
+              "y": 84,
+              "width": 188,
+              "height": 52,
+              "fill": "#16A34A",
+              "cornerRadius": 14,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "primaryButtonText",
+                  "x": 32,
+                  "y": 17,
+                  "fill": "#FFFFFF",
+                  "content": "官方购票入口",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "secondaryButton",
+              "x": 232,
+              "y": 84,
+              "width": 160,
+              "height": 52,
+              "fill": "#EFF6FF",
+              "cornerRadius": 14,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#BFDBFE"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "secondaryButtonText",
+                  "x": 32,
+                  "y": 17,
+                  "fill": "#1D4ED8",
+                  "content": "修改提醒",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "statusChipOpen",
+              "x": 28,
+              "y": 158,
+              "width": 114,
+              "height": 38,
+              "fill": "#FEF3C7",
+              "cornerRadius": 999,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "statusChipOpenText",
+                  "x": 24,
+                  "y": 11,
+                  "fill": "#92400E",
+                  "content": "即将开票",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "statusChipOfficial",
+              "x": 154,
+              "y": 158,
+              "width": 114,
+              "height": 38,
+              "fill": "#DCFCE7",
+              "cornerRadius": 999,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "statusChipOfficialText",
+                  "x": 24,
+                  "y": 11,
+                  "fill": "#166534",
+                  "content": "官方渠道",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "statusChipRisk",
+              "x": 280,
+              "y": 158,
+              "width": 126,
+              "height": 38,
+              "fill": "#FEF2F2",
+              "cornerRadius": 999,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "statusChipRiskText",
+                  "x": 22,
+                  "y": 11,
+                  "fill": "#B91C1C",
+                  "content": "需手动购票",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "compBody",
+              "x": 28,
+              "y": 230,
+              "fill": "#334155",
+              "content": "Cards use medium radius and soft borders. Key states never rely on color alone. Desktop layout prioritizes two-column surfaces: the left side for content and the right rail for actions, reminders, and risks.",
+              "lineHeight": 1.75,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "400"
+            },
+            {
+              "type": "text",
+              "id": "compFooter",
+              "x": 28,
+              "y": 326,
+              "fill": "#64748B",
+              "content": "Accessibility notes: visible focus rings, skip link on navigation-heavy pages, loading states for reminder actions, and text labels on all status pills.",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "400"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "home001",
+      "x": 0,
+      "y": 1140,
+      "name": "01 Home / Dashboard",
+      "theme": {
+        "Mode": "Light",
+        "Base": "Neutral",
+        "Accent": "Default"
+      },
+      "clip": true,
+      "width": 1440,
+      "height": 1200,
+      "fill": "#F6F8FB",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "homeNav",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 88,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "homeBrand",
+              "x": 48,
+              "y": 29,
+              "fill": "#0F172A",
+              "content": "Concert Ticket Assistant",
+              "lineHeight": 1.2,
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "homeSearchBox",
+              "x": 370,
+              "y": 20,
+              "width": 392,
+              "height": 48,
+              "fill": "#F8FAFC",
+              "cornerRadius": 14,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "homeSearchText",
+                  "x": 18,
+                  "y": 15,
+                  "fill": "#94A3B8",
+                  "content": "搜索艺人 / 演出 / 城市",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "400"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "navHome",
+              "x": 812,
+              "y": 33,
+              "fill": "#0F172A",
+              "content": "首页",
+              "lineHeight": 1.2,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "navFollow",
+              "x": 874,
+              "y": 33,
+              "fill": "#64748B",
+              "content": "我的关注",
+              "lineHeight": 1.2,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "navWallet",
+              "x": 972,
+              "y": 33,
+              "fill": "#64748B",
+              "content": "我的票夹",
+              "lineHeight": 1.2,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "navSettings",
+              "x": 1070,
+              "y": 33,
+              "fill": "#64748B",
+              "content": "设置",
+              "lineHeight": 1.2,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "homeAlertBubble",
+              "x": 1188,
+              "y": 22,
+              "width": 90,
+              "height": 44,
+              "fill": "#F1F5F9",
+              "cornerRadius": 14,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "homeAlertText",
+                  "x": 24,
+                  "y": 14,
+                  "fill": "#334155",
+                  "content": "提醒 12",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "homeUser",
+              "x": 1296,
+              "y": 22,
+              "width": 96,
+              "height": 44,
+              "fill": "#EFF6FF",
+              "cornerRadius": 14,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "homeUserText",
+                  "x": 24,
+                  "y": 14,
+                  "fill": "#1D4ED8",
+                  "content": "Jian",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "homeHeroCard",
+          "x": 48,
+          "y": 120,
+          "width": 912,
+          "height": 242,
+          "fill": "#0F172A",
+          "cornerRadius": 28,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "homeHeroLabel",
+              "x": 36,
+              "y": 34,
+              "fill": "#93C5FD",
+              "content": "Today focus",
+              "lineHeight": 1.4,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "homeHeroTitle",
+              "x": 36,
+              "y": 62,
+              "fill": "#FFFFFF",
+              "content": "3 场演出将在 24 小时内开票",
+              "lineHeight": 1.18,
+              "fontFamily": "Inter",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "homeHeroBody",
+              "x": 36,
+              "y": 118,
+              "fill": "#CBD5E1",
+              "content": "优先处理即将开票的关注演出，补全实名、观演人和支付方式后再进入官方入口。",
+              "lineHeight": 1.7,
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "400"
+            },
+            {
+              "type": "frame",
+              "id": "homeHeroCTA",
+              "x": 36,
+              "y": 170,
+              "width": 178,
+              "height": 50,
+              "fill": "#22C55E",
+              "cornerRadius": 14,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "homeHeroCTAText",
+                  "x": 30,
+                  "y": 16,
+                  "fill": "#052E16",
+                  "content": "查看即将开票",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "homeHeroInfo1",
+              "x": 618,
+              "y": 36,
+              "width": 120,
+              "height": 78,
+              "fill": "#111827",
+              "cornerRadius": 18,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "homeHeroInfo1a",
+                  "x": 20,
+                  "y": 18,
+                  "fill": "#CBD5E1",
+                  "content": "已关注",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "homeHeroInfo1b",
+                  "x": 20,
+                  "y": 38,
+                  "fill": "#FFFFFF",
+                  "content": "18",
+                  "lineHeight": 1.1,
+                  "fontFamily": "Inter",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "homeHeroInfo2",
+              "x": 752,
+              "y": 36,
+              "width": 120,
+              "height": 78,
+              "fill": "#111827",
+              "cornerRadius": 18,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "homeHeroInfo2a",
+                  "x": 20,
+                  "y": 18,
+                  "fill": "#CBD5E1",
+                  "content": "提醒开启",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "homeHeroInfo2b",
+                  "x": 20,
+                  "y": 38,
+                  "fill": "#FFFFFF",
+                  "content": "15",
+                  "lineHeight": 1.1,
+                  "fontFamily": "Inter",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "homeHeroInfo3",
+              "x": 618,
+              "y": 130,
+              "width": 254,
+              "height": 74,
+              "fill": "#111827",
+              "cornerRadius": 18,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "homeHeroInfo3a",
+                  "x": 20,
+                  "y": 16,
+                  "fill": "#CBD5E1",
+                  "content": "合规说明",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "homeHeroInfo3b",
+                  "x": 20,
+                  "y": 38,
+                  "fill": "#FFFFFF",
+                  "content": "仅提供提醒与官方手动购票入口",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "homeRightTop",
+          "x": 992,
+          "y": 120,
+          "width": 400,
+          "height": 242,
+          "fill": "#FFFFFF",
+          "cornerRadius": 24,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "homeRightTopTitle",
+              "x": 28,
+              "y": 28,
+              "fill": "#0F172A",
+              "content": "我关注的演出提醒",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "homeRightTopItem1",
+              "x": 28,
+              "y": 76,
+              "fill": "#0F172A",
+              "content": "Taylor Swift 上海站 · 1 小时后开票",
+              "lineHeight": 1.5,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "homeRightTopItem1sub",
+              "x": 28,
+              "y": 104,
+              "fill": "#64748B",
+              "content": "已开启 24h / 1h / 10m / 开票开始提醒",
+              "lineHeight": 1.5,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "400"
+            },
+            {
+              "type": "text",
+              "id": "homeRightTopItem2",
+              "x": 28,
+              "y": 142,
+              "fill": "#0F172A",
+              "content": "周杰伦 北京站 · 需补全常用观演人",
+              "lineHeight": 1.5,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "homeRightTopItem2sub",
+              "x": 28,
+              "y": 170,
+              "fill": "#B45309",
+              "content": "关键项未完成，建议在开票前完成准备",
+              "lineHeight": 1.5,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "homeUpcoming",
+          "x": 48,
+          "y": 394,
+          "width": 912,
+          "height": 392,
+          "fill": "#FFFFFF",
+          "cornerRadius": 24,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "homeUpcomingTitle",
+              "x": 28,
+              "y": 26,
+              "fill": "#0F172A",
+              "content": "即将开票",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "upcomingRow1",
+              "x": 28,
+              "y": 82,
+              "width": 856,
+              "height": 86,
+              "fill": "#F8FAFC",
+              "cornerRadius": 18,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "upcoming1Main",
+                  "x": 22,
+                  "y": 20,
+                  "fill": "#0F172A",
+                  "content": "Taylor Swift 上海站 · 梅赛德斯-奔驰文化中心",
+                  "lineHeight": 1.35,
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "upcoming1Sub",
+                  "x": 22,
+                  "y": 48,
+                  "fill": "#64748B",
+                  "content": "正式开票 2026/05/16 12:00 · 官方平台 大麦 / 猫眼",
+                  "lineHeight": 1.4,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "400"
+                },
+                {
+                  "type": "frame",
+                  "id": "upcoming1Chip",
+                  "x": 616,
+                  "y": 24,
+                  "width": 112,
+                  "height": 36,
+                  "fill": "#FEF3C7",
+                  "cornerRadius": 999,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "upcoming1ChipText",
+                      "x": 23,
+                      "y": 10,
+                      "fill": "#92400E",
+                      "content": "1 小时后",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "upcoming1Btn",
+                  "x": 742,
+                  "y": 18,
+                  "width": 94,
+                  "height": 48,
+                  "fill": "#16A34A",
+                  "cornerRadius": 14,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "upcoming1BtnText",
+                      "x": 22,
+                      "y": 16,
+                      "fill": "#FFFFFF",
+                      "content": "进入详情",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "upcomingRow2",
+              "x": 28,
+              "y": 184,
+              "width": 856,
+              "height": 86,
+              "fill": "#F8FAFC",
+              "cornerRadius": 18,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "upcoming2Main",
+                  "x": 22,
+                  "y": 20,
+                  "fill": "#0F172A",
+                  "content": "周杰伦 北京站 · 国家体育场",
+                  "lineHeight": 1.35,
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "upcoming2Sub",
+                  "x": 22,
+                  "y": 48,
+                  "fill": "#64748B",
+                  "content": "预售 2026/05/16 19:00 · 需提前完成实名和支付验证",
+                  "lineHeight": 1.4,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "400"
+                },
+                {
+                  "type": "frame",
+                  "id": "upcoming2Chip",
+                  "x": 616,
+                  "y": 24,
+                  "width": 112,
+                  "height": 36,
+                  "fill": "#FFEDD5",
+                  "cornerRadius": 999,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "upcoming2ChipText",
+                      "x": 25,
+                      "y": 10,
+                      "fill": "#C2410C",
+                      "content": "今晚 7 点",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "upcoming2Btn",
+                  "x": 742,
+                  "y": 18,
+                  "width": 94,
+                  "height": 48,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#CBD5E1"
+                  },
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "upcoming2BtnText",
+                      "x": 22,
+                      "y": 16,
+                      "fill": "#334155",
+                      "content": "查看清单",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "upcomingRow3",
+              "x": 28,
+              "y": 286,
+              "width": 856,
+              "height": 86,
+              "fill": "#F8FAFC",
+              "cornerRadius": 18,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "upcoming3Main",
+                  "x": 22,
+                  "y": 20,
+                  "fill": "#0F172A",
+                  "content": "Ado 香港站 · AsiaWorld-Expo",
+                  "lineHeight": 1.35,
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "upcoming3Sub",
+                  "x": 22,
+                  "y": 48,
+                  "fill": "#64748B",
+                  "content": "正式开票 2026/05/17 10:00 · 官方平台 Cityline",
+                  "lineHeight": 1.4,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "400"
+                },
+                {
+                  "type": "frame",
+                  "id": "upcoming3Chip",
+                  "x": 616,
+                  "y": 24,
+                  "width": 112,
+                  "height": 36,
+                  "fill": "#DCFCE7",
+                  "cornerRadius": 999,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "upcoming3ChipText",
+                      "x": 23,
+                      "y": 10,
+                      "fill": "#166534",
+                      "content": "已订提醒",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "upcoming3Btn",
+                  "x": 742,
+                  "y": 18,
+                  "width": 94,
+                  "height": 48,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#CBD5E1"
+                  },
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "upcoming3BtnText",
+                      "x": 22,
+                      "y": 16,
+                      "fill": "#334155",
+                      "content": "查看详情",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "homeProgress",
+          "x": 992,
+          "y": 394,
+          "width": 400,
+          "height": 206,
+          "fill": "#FFFFFF",
+          "cornerRadius": 24,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "homeProgressTitle",
+              "x": 28,
+              "y": 28,
+              "fill": "#0F172A",
+              "content": "购票前准备进度",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "homeProgressBarBg",
+              "x": 28,
+              "y": 88,
+              "width": 344,
+              "height": 16,
+              "fill": "#E2E8F0",
+              "cornerRadius": 999,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "homeProgressBarFg",
+                  "x": 0,
+                  "y": 0,
+                  "width": 248,
+                  "height": 16,
+                  "fill": "#22C55E",
+                  "cornerRadius": 999,
+                  "layout": "none",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "homeProgressLabel",
+              "x": 28,
+              "y": 118,
+              "fill": "#166534",
+              "content": "6 / 8 已完成 · 当前缺少：常用观演人、系统日历同步",
+              "lineHeight": 1.5,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "homeProgressHint",
+              "x": 28,
+              "y": 150,
+              "fill": "#64748B",
+              "content": "当关键项未完成时，开票前提醒卡片会显示风险提示并引导补全。",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "400"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "homeNoticeCard",
+          "x": 992,
+          "y": 618,
+          "width": 400,
+          "height": 168,
+          "fill": "#FFF7ED",
+          "cornerRadius": 24,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#FED7AA"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "homeNoticeTitle",
+              "x": 28,
+              "y": 28,
+              "fill": "#9A3412",
+              "content": "合规提示",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "homeNoticeBody",
+              "x": 28,
+              "y": 60,
+              "fill": "#7C2D12",
+              "content": "本产品仅用于提醒、准备和官方入口跳转。购票需用户在官方页面手动完成，不提供自动下单或任何绕过平台规则的能力。",
+              "lineHeight": 1.7,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "homeRecommend",
+          "x": 48,
+          "y": 818,
+          "width": 1344,
+          "height": 330,
+          "fill": "#FFFFFF",
+          "cornerRadius": 24,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "homeRecommendTitle",
+              "x": 28,
+              "y": 26,
+              "fill": "#0F172A",
+              "content": "热门演出推荐",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "recCard1",
+              "x": 28,
+              "y": 78,
+              "width": 404,
+              "height": 220,
+              "fill": "#EFF6FF",
+              "cornerRadius": 22,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "recCard1Title",
+                  "x": 24,
+                  "y": 24,
+                  "fill": "#0F172A",
+                  "content": "BLACKPINK 东京巨蛋",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "recCard1Sub",
+                  "x": 24,
+                  "y": 58,
+                  "fill": "#475569",
+                  "content": "2026/06/03 · Tokyo Dome · 票价 ¥680 起",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "400"
+                },
+                {
+                  "type": "text",
+                  "id": "recCard1Body",
+                  "x": 24,
+                  "y": 98,
+                  "fill": "#64748B",
+                  "content": "卡片式内容兼顾演出氛围感，但首页仍保持任务型优先，不让推荐区压过即将开票和我的关注。",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "400"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "recCard2",
+              "x": 470,
+              "y": 78,
+              "width": 404,
+              "height": 220,
+              "fill": "#F8FAFC",
+              "cornerRadius": 22,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "recCard2Title",
+                  "x": 24,
+                  "y": 24,
+                  "fill": "#0F172A",
+                  "content": "林俊杰 深圳站",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "recCard2Sub",
+                  "x": 24,
+                  "y": 58,
+                  "fill": "#475569",
+                  "content": "2026/05/29 · 深圳湾体育中心",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "400"
+                },
+                {
+                  "type": "text",
+                  "id": "recCard2Body",
+                  "x": 24,
+                  "y": 98,
+                  "fill": "#64748B",
+                  "content": "推荐卡片保留演出信息、城市与时间，但 CTA 层级低于即将开票列表，避免用户分心。",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "400"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "recCard3",
+              "x": 912,
+              "y": 78,
+              "width": 404,
+              "height": 220,
+              "fill": "#FEFCE8",
+              "cornerRadius": 22,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "recCard3Title",
+                  "x": 24,
+                  "y": 24,
+                  "fill": "#0F172A",
+                  "content": "Aimer 广州站",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "recCard3Sub",
+                  "x": 24,
+                  "y": 58,
+                  "fill": "#475569",
+                  "content": "2026/06/11 · 宝能广州国际体育演艺中心",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "400"
+                },
+                {
+                  "type": "text",
+                  "id": "recCard3Body",
+                  "x": 24,
+                  "y": 98,
+                  "fill": "#64748B",
+                  "content": "推荐区视觉更柔和，作为活跃度补充模块，不承载关键提醒或风险信息。",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "400"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "detail001",
+      "x": 1480,
+      "y": 1140,
+      "name": "02 Event Detail",
+      "theme": {
+        "Mode": "Light",
+        "Base": "Neutral",
+        "Accent": "Default"
+      },
+      "clip": true,
+      "width": 1440,
+      "height": 1360,
+      "fill": "#F6F8FB",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "detailNav",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 88,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "detailBrand",
+              "x": 48,
+              "y": 29,
+              "fill": "#0F172A",
+              "content": "Concert Ticket Assistant",
+              "lineHeight": 1.2,
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "detailSearchGhost",
+              "x": 370,
+              "y": 33,
+              "fill": "#94A3B8",
+              "content": "搜索艺人 / 演出 / 城市",
+              "lineHeight": 1.2,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "400"
+            },
+            {
+              "type": "text",
+              "id": "detailNavHighlight",
+              "x": 874,
+              "y": 33,
+              "fill": "#0F172A",
+              "content": "我的关注",
+              "lineHeight": 1.2,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "detailBreadcrumb",
+          "x": 48,
+          "y": 120,
+          "fill": "#64748B",
+          "content": "首页 / 我的关注 / Taylor Swift 上海站",
+          "lineHeight": 1.5,
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": "500"
+        },
+        {
+          "type": "frame",
+          "id": "detailHero",
+          "x": 48,
+          "y": 152,
+          "width": 912,
+          "height": 278,
+          "fill": "#FFFFFF",
+          "cornerRadius": 28,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "detailStatusChip1",
+              "x": 32,
+              "y": 30,
+              "width": 114,
+              "height": 38,
+              "fill": "#FEF3C7",
+              "cornerRadius": 999,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "detailStatusChip1Text",
+                  "x": 23,
+                  "y": 11,
+                  "fill": "#92400E",
+                  "content": "即将开票",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "detailStatusChip2",
+              "x": 160,
+              "y": 30,
+              "width": 114,
+              "height": 38,
+              "fill": "#DCFCE7",
+              "cornerRadius": 999,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "detailStatusChip2Text",
+                  "x": 23,
+                  "y": 11,
+                  "fill": "#166534",
+                  "content": "官方渠道",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "detailTitle",
+              "x": 32,
+              "y": 88,
+              "fill": "#0F172A",
+              "content": "Taylor Swift 上海站",
+              "lineHeight": 1.15,
+              "fontFamily": "Inter",
+              "fontSize": 38,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "detailMeta1",
+              "x": 32,
+              "y": 146,
+              "fill": "#475569",
+              "content": "梅赛德斯-奔驰文化中心 · 上海 · 演出时间 2026/06/01 19:30",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "400"
+            },
+            {
+              "type": "text",
+              "id": "detailMeta2",
+              "x": 32,
+              "y": 176,
+              "fill": "#475569",
+              "content": "正式开票 2026/05/16 12:00 · 预售 2026/05/15 20:00 · 平台 大麦 / 猫眼",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "400"
+            },
+            {
+              "type": "frame",
+              "id": "detailCountdown",
+              "x": 652,
+              "y": 36,
+              "width": 228,
+              "height": 184,
+              "fill": "#0F172A",
+              "cornerRadius": 24,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "detailCountdownLabel",
+                  "x": 26,
+                  "y": 24,
+                  "fill": "#93C5FD",
+                  "content": "开票倒计时",
+                  "lineHeight": 1.4,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "detailCountdownValue",
+                  "x": 26,
+                  "y": 58,
+                  "fill": "#FFFFFF",
+                  "content": "01:08:42",
+                  "lineHeight": 1.0,
+                  "fontFamily": "Inter",
+                  "fontSize": 42,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "detailCountdownHint",
+                  "x": 26,
+                  "y": 122,
+                  "fill": "#CBD5E1",
+                  "content": "建议在倒计时结束前完成账号、实名、观演人和支付准备。",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "400"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "detailRightRail",
+          "x": 992,
+          "y": 152,
+          "width": 400,
+          "height": 986,
+          "fill": "#F6F8FB",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "detailReminderCard",
+              "x": 0,
+              "y": 0,
+              "width": 400,
+              "height": 252,
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#E2E8F0"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "detailReminderTitle",
+                  "x": 28,
+                  "y": 28,
+                  "fill": "#0F172A",
+                  "content": "提醒设置",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "detailReminderBody",
+                  "x": 28,
+                  "y": 72,
+                  "fill": "#334155",
+                  "content": "24 小时前 · 已开启\n1 小时前 · 已开启\n10 分钟前 · 已开启\n开票开始 · 已开启\n开票后 10 分钟 · 可选",
+                  "lineHeight": 1.85,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "400"
+                },
+                {
+                  "type": "frame",
+                  "id": "detailReminderBtn",
+                  "x": 28,
+                  "y": 186,
+                  "width": 156,
+                  "height": 46,
+                  "fill": "#EFF6FF",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#BFDBFE"
+                  },
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "detailReminderBtnText",
+                      "x": 28,
+                      "y": 15,
+                      "fill": "#1D4ED8",
+                      "content": "修改提醒组合",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "detailTimelineCard",
+              "x": 0,
+              "y": 276,
+              "width": 400,
+              "height": 286,
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#E2E8F0"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "detailTimelineTitle",
+                  "x": 28,
+                  "y": 28,
+                  "fill": "#0F172A",
+                  "content": "关键时间节点",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "detailTimelineBody",
+                  "x": 28,
+                  "y": 72,
+                  "fill": "#334155",
+                  "content": "05/15 20:00 预售开始\n05/16 11:50 开票前 10 分钟提醒\n05/16 12:00 正式开票\n05/16 12:10 开票后状态提醒（可选）\n06/01 19:30 演出开始",
+                  "lineHeight": 1.9,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "400"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "detailOfficialCard",
+              "x": 0,
+              "y": 586,
+              "width": 400,
+              "height": 220,
+              "fill": "#FFF7ED",
+              "cornerRadius": 24,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FED7AA"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "detailOfficialTitle",
+                  "x": 28,
+                  "y": 28,
+                  "fill": "#9A3412",
+                  "content": "官方渠道与合规说明",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "detailOfficialBody",
+                  "x": 28,
+                  "y": 68,
+                  "fill": "#7C2D12",
+                  "content": "跳转后需在官方页面手动完成选票、下单和支付。若主链接失败，展示备用官方链接，不提供任何自动化操作。",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "detailOfficialBtn",
+                  "x": 28,
+                  "y": 150,
+                  "width": 172,
+                  "height": 46,
+                  "fill": "#16A34A",
+                  "cornerRadius": 14,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "detailOfficialBtnText",
+                      "x": 30,
+                      "y": 15,
+                      "fill": "#FFFFFF",
+                      "content": "打开官方购票页",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "detailPurchaseCard",
+          "x": 48,
+          "y": 462,
+          "width": 912,
+          "height": 190,
+          "fill": "#FFFFFF",
+          "cornerRadius": 24,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "detailPurchaseTitle",
+              "x": 28,
+              "y": 28,
+              "fill": "#0F172A",
+              "content": "官方购票入口",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "detailPurchaseBody",
+              "x": 28,
+              "y": 68,
+              "fill": "#475569",
+              "content": "展示主官方链接、备用官方链接，以及平台规则摘要。入口附近重复强调“需用户手动完成购票”，避免用户误解为自动抢票工具。",
+              "lineHeight": 1.7,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "400"
+            },
+            {
+              "type": "frame",
+              "id": "detailPurchaseBtn1",
+              "x": 28,
+              "y": 124,
+              "width": 196,
+              "height": 46,
+              "fill": "#16A34A",
+              "cornerRadius": 14,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "detailPurchaseBtn1Text",
+                  "x": 30,
+                  "y": 15,
+                  "fill": "#FFFFFF",
+                  "content": "大麦官方入口",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "detailPurchaseBtn2",
+              "x": 240,
+              "y": 124,
+              "width": 196,
+              "height": 46,
+              "fill": "#FFFFFF",
+              "cornerRadius": 14,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "detailPurchaseBtn2Text",
+                  "x": 30,
+                  "y": 15,
+                  "fill": "#334155",
+                  "content": "猫眼备用入口",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "detailPriceCard",
+          "x": 48,
+          "y": 684,
+          "width": 436,
+          "height": 268,
+          "fill": "#FFFFFF",
+          "cornerRadius": 24,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "detailPriceTitle",
+              "x": 28,
+              "y": 28,
+              "fill": "#0F172A",
+              "content": "票档与座位信息",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "detailPriceBody",
+              "x": 28,
+              "y": 76,
+              "fill": "#334155",
+              "content": "¥1880 · 内场 A\n¥1580 · 内场 B\n¥1280 · 看台前区\n¥980 · 看台中区\n¥680 · 看台后区",
+              "lineHeight": 1.9,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "400"
+            },
+            {
+              "type": "text",
+              "id": "detailPriceHint",
+              "x": 28,
+              "y": 200,
+              "fill": "#64748B",
+              "content": "用户可提前确认目标票档和可接受区域，减少开票时决策耗时。",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "400"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "detailRulesCard",
+          "x": 508,
+          "y": 684,
+          "width": 452,
+          "height": 268,
+          "fill": "#FFFFFF",
+          "cornerRadius": 24,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "detailRulesTitle",
+              "x": 28,
+              "y": 28,
+              "fill": "#0F172A",
+              "content": "实名与退票规则",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "detailRulesBody",
+              "x": 28,
+              "y": 76,
+              "fill": "#334155",
+              "content": "• 购票前需完成实名\n• 每账号限购 4 张\n• 退票按平台公布规则执行\n• 入场需携带有效证件并核验\n• 规则变更需显示更新时间与变更说明",
+              "lineHeight": 1.85,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "400"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "detailChecklistCard",
+          "x": 48,
+          "y": 984,
+          "width": 912,
+          "height": 320,
+          "fill": "#FFFFFF",
+          "cornerRadius": 24,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "detailChecklistTitle",
+              "x": 28,
+              "y": 28,
+              "fill": "#0F172A",
+              "content": "购票前检查清单",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "detailChecklistBarBg",
+              "x": 28,
+              "y": 74,
+              "width": 320,
+              "height": 14,
+              "fill": "#E2E8F0",
+              "cornerRadius": 999,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "detailChecklistBarFg",
+                  "x": 0,
+                  "y": 0,
+                  "width": 240,
+                  "height": 14,
+                  "fill": "#22C55E",
+                  "cornerRadius": 999,
+                  "layout": "none",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "detailChecklistBody",
+              "x": 28,
+              "y": 108,
+              "fill": "#334155",
+              "content": "✓ 已完成实名信息填写\n✓ 已绑定支付方式\n✓ 已登录官方售票平台\n✓ 已确认目标票档\n✓ 已确认可接受座位区域\n✓ 已开启通知权限\n○ 待完成常用观演人\n○ 待完成系统日历同步",
+              "lineHeight": 1.9,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "400"
+            },
+            {
+              "type": "text",
+              "id": "detailChecklistHint",
+              "x": 520,
+              "y": 108,
+              "fill": "#B45309",
+              "content": "关键提示\n当常用观演人未完成时，在开票前 1 小时和 10 分钟提醒中都展示风险标签，并优先引导回到准备清单。",
+              "lineHeight": 1.8,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "follow001",
+      "x": 0,
+      "y": 2380,
+      "name": "03 My Following",
+      "theme": {
+        "Mode": "Light",
+        "Base": "Neutral",
+        "Accent": "Default"
+      },
+      "clip": true,
+      "width": 1440,
+      "height": 1080,
+      "fill": "#F6F8FB",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "followNav",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 88,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "followBrand",
+              "x": 48,
+              "y": 29,
+              "fill": "#0F172A",
+              "content": "Concert Ticket Assistant",
+              "lineHeight": 1.2,
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "followNavHighlight",
+              "x": 874,
+              "y": 33,
+              "fill": "#0F172A",
+              "content": "我的关注",
+              "lineHeight": 1.2,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "followTitle",
+          "x": 48,
+          "y": 122,
+          "fill": "#0F172A",
+          "content": "我的关注",
+          "lineHeight": 1.2,
+          "fontFamily": "Inter",
+          "fontSize": 34,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "followSub",
+          "x": 48,
+          "y": 166,
+          "fill": "#64748B",
+          "content": "集中管理已收藏演出、提醒组合和当前状态，优先突出最近需要处理的演出。",
+          "lineHeight": 1.6,
+          "fontFamily": "Inter",
+          "fontSize": 16,
+          "fontWeight": "400"
+        },
+        {
+          "type": "frame",
+          "id": "followStats1",
+          "x": 48,
+          "y": 214,
+          "width": 206,
+          "height": 118,
+          "fill": "#FFFFFF",
+          "cornerRadius": 22,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "followStats1a",
+              "x": 22,
+              "y": 22,
+              "fill": "#64748B",
+              "content": "总关注演出",
+              "lineHeight": 1.4,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "followStats1b",
+              "x": 22,
+              "y": 52,
+              "fill": "#0F172A",
+              "content": "18",
+              "lineHeight": 1.0,
+              "fontFamily": "Inter",
+              "fontSize": 34,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "followStats2",
+          "x": 270,
+          "y": 214,
+          "width": 206,
+          "height": 118,
+          "fill": "#FFFFFF",
+          "cornerRadius": 22,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "followStats2a",
+              "x": 22,
+              "y": 22,
+              "fill": "#64748B",
+              "content": "即将开票",
+              "lineHeight": 1.4,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "followStats2b",
+              "x": 22,
+              "y": 52,
+              "fill": "#0F172A",
+              "content": "4",
+              "lineHeight": 1.0,
+              "fontFamily": "Inter",
+              "fontSize": 34,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "followStats3",
+          "x": 492,
+          "y": 214,
+          "width": 206,
+          "height": 118,
+          "fill": "#FFFFFF",
+          "cornerRadius": 22,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "followStats3a",
+              "x": 22,
+              "y": 22,
+              "fill": "#64748B",
+              "content": "待补全准备",
+              "lineHeight": 1.4,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "followStats3b",
+              "x": 22,
+              "y": 52,
+              "fill": "#B45309",
+              "content": "3",
+              "lineHeight": 1.0,
+              "fontFamily": "Inter",
+              "fontSize": 34,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "followStats4",
+          "x": 714,
+          "y": 214,
+          "width": 206,
+          "height": 118,
+          "fill": "#FFFFFF",
+          "cornerRadius": 22,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "followStats4a",
+              "x": 22,
+              "y": 22,
+              "fill": "#64748B",
+              "content": "提醒已开启",
+              "lineHeight": 1.4,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "followStats4b",
+              "x": 22,
+              "y": 52,
+              "fill": "#166534",
+              "content": "15",
+              "lineHeight": 1.0,
+              "fontFamily": "Inter",
+              "fontSize": 34,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "followFilterBar",
+          "x": 48,
+          "y": 360,
+          "width": 1344,
+          "height": 72,
+          "fill": "#FFFFFF",
+          "cornerRadius": 20,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "followFilter1",
+              "x": 28,
+              "y": 26,
+              "fill": "#0F172A",
+              "content": "状态：全部 / 未开票 / 即将开票 / 开票中 / 已售罄 / 已结束",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "followFilter2",
+              "x": 760,
+              "y": 26,
+              "fill": "#64748B",
+              "content": "城市 / 时间 / 平台 / 是否已开启提醒",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "followListCard",
+          "x": 48,
+          "y": 456,
+          "width": 1344,
+          "height": 560,
+          "fill": "#FFFFFF",
+          "cornerRadius": 24,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "followHead1",
+              "x": 28,
+              "y": 28,
+              "fill": "#64748B",
+              "content": "演出",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "followHead2",
+              "x": 520,
+              "y": 28,
+              "fill": "#64748B",
+              "content": "开票时间",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "followHead3",
+              "x": 712,
+              "y": 28,
+              "fill": "#64748B",
+              "content": "提醒状态",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "followHead4",
+              "x": 924,
+              "y": 28,
+              "fill": "#64748B",
+              "content": "准备情况",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "followHead5",
+              "x": 1142,
+              "y": 28,
+              "fill": "#64748B",
+              "content": "操作",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "followRow1",
+              "x": 20,
+              "y": 64,
+              "width": 1304,
+              "height": 104,
+              "fill": "#F8FAFC",
+              "cornerRadius": 18,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "followRow1Event",
+                  "x": 18,
+                  "y": 24,
+                  "fill": "#0F172A",
+                  "content": "Taylor Swift 上海站\n梅赛德斯-奔驰文化中心",
+                  "lineHeight": 1.65,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "followRow1Sale",
+                  "x": 500,
+                  "y": 34,
+                  "fill": "#334155",
+                  "content": "05/16 12:00",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "followRow1Reminder",
+                  "x": 692,
+                  "y": 34,
+                  "fill": "#166534",
+                  "content": "4 个提醒已开启",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "followRow1Prep",
+                  "x": 904,
+                  "y": 34,
+                  "fill": "#166534",
+                  "content": "6 / 8 完成",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "followRow1Action",
+                  "x": 1122,
+                  "y": 34,
+                  "fill": "#1D4ED8",
+                  "content": "查看详情 / 修改提醒",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "followRow2",
+              "x": 20,
+              "y": 184,
+              "width": 1304,
+              "height": 104,
+              "fill": "#FFF7ED",
+              "cornerRadius": 18,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "followRow2Event",
+                  "x": 18,
+                  "y": 24,
+                  "fill": "#0F172A",
+                  "content": "周杰伦 北京站\n国家体育场",
+                  "lineHeight": 1.65,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "followRow2Sale",
+                  "x": 500,
+                  "y": 34,
+                  "fill": "#334155",
+                  "content": "05/16 19:00",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "followRow2Reminder",
+                  "x": 692,
+                  "y": 34,
+                  "fill": "#166534",
+                  "content": "3 个提醒已开启",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "followRow2Prep",
+                  "x": 904,
+                  "y": 26,
+                  "fill": "#B45309",
+                  "content": "关键项未完成\n常用观演人未设置",
+                  "lineHeight": 1.55,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "followRow2Action",
+                  "x": 1122,
+                  "y": 34,
+                  "fill": "#1D4ED8",
+                  "content": "补全清单 / 修改提醒",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "followRow3",
+              "x": 20,
+              "y": 304,
+              "width": 1304,
+              "height": 104,
+              "fill": "#F8FAFC",
+              "cornerRadius": 18,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "followRow3Event",
+                  "x": 18,
+                  "y": 24,
+                  "fill": "#0F172A",
+                  "content": "Ado 香港站\nAsiaWorld-Expo",
+                  "lineHeight": 1.65,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "followRow3Sale",
+                  "x": 500,
+                  "y": 34,
+                  "fill": "#334155",
+                  "content": "05/17 10:00",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "followRow3Reminder",
+                  "x": 692,
+                  "y": 34,
+                  "fill": "#334155",
+                  "content": "仅开票开始提醒",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "followRow3Prep",
+                  "x": 904,
+                  "y": 34,
+                  "fill": "#166534",
+                  "content": "8 / 8 完成",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "followRow3Action",
+                  "x": 1122,
+                  "y": 34,
+                  "fill": "#1D4ED8",
+                  "content": "查看详情 / 增加提醒",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "wallet001",
+      "x": 1480,
+      "y": 2540,
+      "name": "04 Ticket Wallet",
+      "theme": {
+        "Mode": "Light",
+        "Base": "Neutral",
+        "Accent": "Default"
+      },
+      "clip": true,
+      "width": 1440,
+      "height": 1040,
+      "fill": "#F6F8FB",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "walletNav",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 88,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "walletBrand",
+              "x": 48,
+              "y": 29,
+              "fill": "#0F172A",
+              "content": "Concert Ticket Assistant",
+              "lineHeight": 1.2,
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "walletNavHighlight",
+              "x": 972,
+              "y": 33,
+              "fill": "#0F172A",
+              "content": "我的票夹",
+              "lineHeight": 1.2,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "walletTitle",
+          "x": 48,
+          "y": 122,
+          "fill": "#0F172A",
+          "content": "我的票夹",
+          "lineHeight": 1.2,
+          "fontFamily": "Inter",
+          "fontSize": 34,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "walletSub",
+          "x": 48,
+          "y": 166,
+          "fill": "#64748B",
+          "content": "购票成功后记录订单摘要、电子票截图、入场提醒和交通准备信息。",
+          "lineHeight": 1.6,
+          "fontFamily": "Inter",
+          "fontSize": 16,
+          "fontWeight": "400"
+        },
+        {
+          "type": "frame",
+          "id": "walletList",
+          "x": 48,
+          "y": 220,
+          "width": 452,
+          "height": 760,
+          "fill": "#FFFFFF",
+          "cornerRadius": 24,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "walletListTitle",
+              "x": 28,
+              "y": 28,
+              "fill": "#0F172A",
+              "content": "已购演出",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "walletTicket1",
+              "x": 20,
+              "y": 78,
+              "width": 412,
+              "height": 150,
+              "fill": "#0F172A",
+              "cornerRadius": 22,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "walletTicket1Title",
+                  "x": 24,
+                  "y": 24,
+                  "fill": "#FFFFFF",
+                  "content": "Taylor Swift 上海站",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "walletTicket1Sub",
+                  "x": 24,
+                  "y": 60,
+                  "fill": "#CBD5E1",
+                  "content": "2026/06/01 19:30 · 内场 B · 2 张",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "400"
+                },
+                {
+                  "type": "text",
+                  "id": "walletTicket1Hint",
+                  "x": 24,
+                  "y": 104,
+                  "fill": "#93C5FD",
+                  "content": "距离演出还有 17 天 · 已配置入场提醒",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "walletTicket2",
+              "x": 20,
+              "y": 246,
+              "width": 412,
+              "height": 150,
+              "fill": "#F8FAFC",
+              "cornerRadius": 22,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "walletTicket2Title",
+                  "x": 24,
+                  "y": 24,
+                  "fill": "#0F172A",
+                  "content": "Ado 香港站",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "walletTicket2Sub",
+                  "x": 24,
+                  "y": 60,
+                  "fill": "#475569",
+                  "content": "2026/06/14 20:00 · 看台区 · 1 张",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "400"
+                },
+                {
+                  "type": "text",
+                  "id": "walletTicket2Hint",
+                  "x": 24,
+                  "y": 104,
+                  "fill": "#64748B",
+                  "content": "待上传电子票截图",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "walletDetailCard",
+          "x": 532,
+          "y": 220,
+          "width": 860,
+          "height": 760,
+          "fill": "#FFFFFF",
+          "cornerRadius": 24,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "walletDetailTitle",
+              "x": 32,
+              "y": 28,
+              "fill": "#0F172A",
+              "content": "订单摘要与行程提醒",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "walletOrderInfo",
+              "x": 32,
+              "y": 84,
+              "width": 796,
+              "height": 168,
+              "fill": "#F8FAFC",
+              "cornerRadius": 20,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "walletOrderInfoText",
+                  "x": 24,
+                  "y": 24,
+                  "fill": "#334155",
+                  "content": "订单号：TS-SH-20260601-001\n平台：大麦官方\n票档：内场 B\n购票人：Jian\n支付状态：已支付\n电子票：已上传截图",
+                  "lineHeight": 1.9,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "400"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "walletReminderPanel",
+              "x": 32,
+              "y": 276,
+              "width": 380,
+              "height": 208,
+              "fill": "#FEFCE8",
+              "cornerRadius": 20,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "walletReminderPanelTitle",
+                  "x": 22,
+                  "y": 22,
+                  "fill": "#854D0E",
+                  "content": "演出前提醒",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "walletReminderPanelBody",
+                  "x": 22,
+                  "y": 58,
+                  "fill": "#713F12",
+                  "content": "演出前 24 小时\n演出前 3 小时\n入场须知提醒\n出发前交通检查",
+                  "lineHeight": 1.9,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "walletTravelPanel",
+              "x": 448,
+              "y": 276,
+              "width": 380,
+              "height": 208,
+              "fill": "#EFF6FF",
+              "cornerRadius": 20,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "walletTravelPanelTitle",
+                  "x": 22,
+                  "y": 22,
+                  "fill": "#1D4ED8",
+                  "content": "交通与酒店清单",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "walletTravelPanelBody",
+                  "x": 22,
+                  "y": 58,
+                  "fill": "#1E3A8A",
+                  "content": "✓ 酒店预订\n✓ 往返高铁\n○ 场馆路线确认\n○ 证件携带检查",
+                  "lineHeight": 1.9,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "walletFooterHint",
+              "x": 32,
+              "y": 526,
+              "fill": "#64748B",
+              "content": "票夹页弱化购票动作，强调已购信息查看、提醒追踪和演出当天准备，符合 PRD 中的购票后管理目标。",
+              "lineHeight": 1.7,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "400"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "settings001",
+      "x": 0,
+      "y": 3500,
+      "name": "05 Settings",
+      "theme": {
+        "Mode": "Light",
+        "Base": "Neutral",
+        "Accent": "Default"
+      },
+      "clip": true,
+      "width": 1440,
+      "height": 1040,
+      "fill": "#F6F8FB",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "settingsNav",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 88,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "settingsBrand",
+              "x": 48,
+              "y": 29,
+              "fill": "#0F172A",
+              "content": "Concert Ticket Assistant",
+              "lineHeight": 1.2,
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "settingsNavHighlight",
+              "x": 1070,
+              "y": 33,
+              "fill": "#0F172A",
+              "content": "设置",
+              "lineHeight": 1.2,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "settingsTitle",
+          "x": 48,
+          "y": 122,
+          "fill": "#0F172A",
+          "content": "设置",
+          "lineHeight": 1.2,
+          "fontFamily": "Inter",
+          "fontSize": 34,
+          "fontWeight": "700"
+        },
+        {
+          "type": "frame",
+          "id": "settingsMenu",
+          "x": 48,
+          "y": 188,
+          "width": 280,
+          "height": 760,
+          "fill": "#FFFFFF",
+          "cornerRadius": 24,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "settingsMenu1",
+              "x": 24,
+              "y": 28,
+              "fill": "#1D4ED8",
+              "content": "通知与提醒",
+              "lineHeight": 1.4,
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "settingsMenu2",
+              "x": 24,
+              "y": 74,
+              "fill": "#475569",
+              "content": "日历同步",
+              "lineHeight": 1.4,
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "settingsMenu3",
+              "x": 24,
+              "y": 120,
+              "fill": "#475569",
+              "content": "隐私与权限",
+              "lineHeight": 1.4,
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "settingsMenu4",
+              "x": 24,
+              "y": 166,
+              "fill": "#475569",
+              "content": "账号与设备",
+              "lineHeight": 1.4,
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "settingsMenu5",
+              "x": 24,
+              "y": 212,
+              "fill": "#475569",
+              "content": "合规说明",
+              "lineHeight": 1.4,
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "settingsMain",
+          "x": 360,
+          "y": 188,
+          "width": 1032,
+          "height": 760,
+          "fill": "#FFFFFF",
+          "cornerRadius": 24,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "settingsMainTitle",
+              "x": 32,
+              "y": 28,
+              "fill": "#0F172A",
+              "content": "通知与提醒",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 26,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "settingsCard1",
+              "x": 32,
+              "y": 84,
+              "width": 968,
+              "height": 146,
+              "fill": "#F8FAFC",
+              "cornerRadius": 20,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "settingsCard1Title",
+                  "x": 24,
+                  "y": 22,
+                  "fill": "#0F172A",
+                  "content": "通知渠道",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "settingsCard1Body",
+                  "x": 24,
+                  "y": 58,
+                  "fill": "#334155",
+                  "content": "App Push  已开启\n站内消息  已开启\n邮件提醒  已开启\n短信提醒  后续版本",
+                  "lineHeight": 1.9,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "400"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "settingsCard2",
+              "x": 32,
+              "y": 254,
+              "width": 472,
+              "height": 180,
+              "fill": "#F8FAFC",
+              "cornerRadius": 20,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "settingsCard2Title",
+                  "x": 24,
+                  "y": 22,
+                  "fill": "#0F172A",
+                  "content": "默认提醒时间",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "settingsCard2Body",
+                  "x": 24,
+                  "y": 58,
+                  "fill": "#334155",
+                  "content": "✓ 开票前 24 小时\n✓ 开票前 1 小时\n✓ 开票前 10 分钟\n✓ 开票开始\n○ 开票后 10 分钟（可选）",
+                  "lineHeight": 1.9,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "400"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "settingsCard3",
+              "x": 528,
+              "y": 254,
+              "width": 472,
+              "height": 180,
+              "fill": "#F8FAFC",
+              "cornerRadius": 20,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "settingsCard3Title",
+                  "x": 24,
+                  "y": 22,
+                  "fill": "#0F172A",
+                  "content": "日历同步",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "settingsCard3Body",
+                  "x": 24,
+                  "y": 58,
+                  "fill": "#334155",
+                  "content": "默认将开票时间和演出开始时间同步到系统日历。用户可以为不同演出单独关闭。",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "400"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "settingsCard4",
+              "x": 32,
+              "y": 458,
+              "width": 968,
+              "height": 210,
+              "fill": "#FFF7ED",
+              "cornerRadius": 20,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FED7AA"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "settingsCard4Title",
+                  "x": 24,
+                  "y": 22,
+                  "fill": "#9A3412",
+                  "content": "隐私、账号与合规",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "settingsCard4Body",
+                  "x": 24,
+                  "y": 58,
+                  "fill": "#7C2D12",
+                  "content": "• 不保存第三方票务平台账号密码明文\n• 支持设备登录控制和通知权限管理\n• 明确标注产品不提供自动抢票、自动下单或绕过限制能力\n• 仅展示官方或人工确认的可信渠道",
+                  "lineHeight": 1.85,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
