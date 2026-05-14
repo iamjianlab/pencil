@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Component } from 'vue'
+import type { Component } from "vue";
 import {
   ArrowRight,
   Bell,
@@ -8,67 +8,67 @@ import {
   DataAnalysis,
   Link,
   Tickets,
-} from '@element-plus/icons-vue'
-import { ElButton, ElIcon } from 'element-plus'
+} from "@element-plus/icons-vue";
+import { ElButton, ElIcon } from "element-plus";
 
 interface NavItem {
-  label: string
-  target: string
+  label: string;
+  target: string;
 }
 
 interface FeatureCard {
-  icon: Component
-  title: string
-  description: string
+  icon: Component;
+  title: string;
+  description: string;
 }
 
 interface ServiceItem {
-  icon: Component
-  label: string
+  icon: Component;
+  label: string;
 }
 
 const navItems: NavItem[] = [
-  { label: '网站介绍', target: '#intro' },
-  { label: '主要功能', target: '#features' },
-  { label: '提供服务', target: '#services' },
-]
+  { label: "网站介绍", target: "#intro" },
+  { label: "主要功能", target: "#features" },
+  { label: "提供服务", target: "#services" },
+];
 
 const featureCards: FeatureCard[] = [
   {
     icon: Bell,
-    title: '多轮智能提醒',
+    title: "多轮智能提醒",
     description:
-      '从开票前 24 小时到最后 10 分钟，全方位覆盖关键节点，不再错过任何一次正式开票窗口。',
+      "从开票前 24 小时到最后 10 分钟，全方位覆盖关键节点，不再错过任何一次正式开票窗口。",
   },
   {
     icon: Link,
-    title: '官方合规聚合',
+    title: "官方合规聚合",
     description:
-      '一键跳转大麦、猫眼等官方售票平台，统一整理入口与规则说明，安全、可靠、路径清晰。',
+      "一键跳转大麦、猫眼等官方售票平台，统一整理入口与规则说明，安全、可靠、路径清晰。",
   },
   {
     icon: CircleCheck,
-    title: '抢票检查清单',
+    title: "抢票检查清单",
     description:
-      '提前核验实名认证、常用观演人、支付方式与设备状态，避免在最关键的时刻掉链子。',
+      "提前核验实名认证、常用观演人、支付方式与设备状态，避免在最关键的时刻掉链子。",
   },
-]
+];
 
 const serviceItems: ServiceItem[] = [
-  { icon: Calendar, label: '手机日历同步规划' },
-  { icon: Tickets, label: '购票后电子票夹管理' },
-  { icon: DataAnalysis, label: '官方余票状态动态跟踪' },
-]
+  { icon: Calendar, label: "手机日历同步规划" },
+  { icon: Tickets, label: "购票后电子票夹管理" },
+  { icon: DataAnalysis, label: "官方余票状态动态跟踪" },
+];
 
 function scrollToSection(target: string) {
-  const element = document.querySelector<HTMLElement>(target)
+  const element = document.querySelector<HTMLElement>(target);
 
   if (!element) {
-    return
+    return;
   }
 
-  window.history.replaceState({}, '', target)
-  element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  window.history.replaceState({}, "", target);
+  element.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 </script>
 
@@ -98,14 +98,17 @@ function scrollToSection(target: string) {
           </button>
         </nav>
 
-        <ElButton class="action-button action-button--dark" @click="scrollToSection('#services')">
+        <ElButton
+          class="action-button action-button--dark"
+          @click="scrollToSection('#services')"
+        >
           立即体验
         </ElButton>
       </header>
 
       <section class="hero-section reveal-fade" id="intro">
         <div class="hero-copy">
-          <h1>让每场演出都不留遗憾。</h1>
+          <h1>让每场演出都存在遗憾。</h1>
           <p>
             基于官方规则打造的演唱会智能助手。提前获取开票提醒、完成准备清单，从容直达官方入口。安全、合规、高效。
           </p>
@@ -149,14 +152,11 @@ function scrollToSection(target: string) {
           </div>
 
           <div class="visual-dashboard">
-            <article class="dashboard-card dashboard-card--hero">
-              <div>
+            <div class="dashboard-grid">
+              <article class="dashboard-card">
                 <span>倒计时提醒</span>
                 <strong>距开票还有 02:18:36</strong>
-              </div>
-            </article>
-
-            <div class="dashboard-grid">
+              </article>
               <article class="dashboard-card">
                 <span>抢票进度</span>
                 <strong>实名认证已完成</strong>
@@ -179,7 +179,11 @@ function scrollToSection(target: string) {
         </div>
 
         <div class="feature-grid">
-          <article v-for="card in featureCards" :key="card.title" class="feature-card surface-card">
+          <article
+            v-for="card in featureCards"
+            :key="card.title"
+            class="feature-card surface-card"
+          >
             <div class="feature-icon">
               <ElIcon>
                 <component :is="card.icon" />
@@ -197,7 +201,11 @@ function scrollToSection(target: string) {
         </div>
 
         <div class="service-banner">
-          <article v-for="item in serviceItems" :key="item.label" class="service-item">
+          <article
+            v-for="item in serviceItems"
+            :key="item.label"
+            class="service-item"
+          >
             <div class="service-item__icon">
               <ElIcon>
                 <component :is="item.icon" />
@@ -221,7 +229,11 @@ function scrollToSection(target: string) {
   min-height: 100vh;
   padding: 32px 24px 72px;
   background:
-    radial-gradient(circle at top, rgba(255, 255, 255, 0.95), rgba(245, 245, 247, 0) 38%),
+    radial-gradient(
+      circle at top,
+      rgba(255, 255, 255, 0.95),
+      rgba(245, 245, 247, 0) 38%
+    ),
     linear-gradient(180deg, #f9f9fb 0%, #f5f5f7 100%);
   color: #1d1d1f;
 }
@@ -233,11 +245,7 @@ function scrollToSection(target: string) {
   flex-direction: column;
   gap: 120px;
   font-family:
-    'Inter',
-    'SF Pro Display',
-    'SF Pro Text',
-    'Helvetica Neue',
-    sans-serif;
+    "Inter", "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
 }
 
 .surface-card {
@@ -314,7 +322,9 @@ function scrollToSection(target: string) {
   font-weight: 600;
   line-height: 1.4;
   cursor: pointer;
-  transition: color 180ms ease, opacity 180ms ease;
+  transition:
+    color 180ms ease,
+    opacity 180ms ease;
 }
 
 .nav-link:hover,
@@ -395,20 +405,28 @@ function scrollToSection(target: string) {
   overflow: hidden;
   border-radius: 32px;
   background:
-    radial-gradient(circle at 50% 18%, rgba(255, 255, 255, 0.2), transparent 28%),
+    radial-gradient(
+      circle at 50% 18%,
+      rgba(255, 255, 255, 0.2),
+      transparent 28%
+    ),
     linear-gradient(180deg, rgba(5, 15, 38, 0.78), rgba(7, 18, 46, 0.96)),
     linear-gradient(135deg, #162038, #090c14);
   min-height: 420px;
 }
 
 .visual-stage::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: auto 0 0;
   height: 42%;
   background:
     linear-gradient(180deg, rgba(7, 18, 46, 0) 0%, rgba(7, 18, 46, 0.96) 100%),
-    radial-gradient(circle at 50% 8%, rgba(255, 255, 255, 0.12), transparent 48%);
+    radial-gradient(
+      circle at 50% 8%,
+      rgba(255, 255, 255, 0.12),
+      transparent 48%
+    );
 }
 
 .stage-aura {
@@ -416,7 +434,11 @@ function scrollToSection(target: string) {
   inset: auto 10% -16% 10%;
   height: 48%;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(0, 113, 227, 0.42), rgba(0, 113, 227, 0) 68%);
+  background: radial-gradient(
+    circle,
+    rgba(0, 113, 227, 0.42),
+    rgba(0, 113, 227, 0) 68%
+  );
   filter: blur(18px);
 }
 
@@ -468,7 +490,11 @@ function scrollToSection(target: string) {
   top: -16%;
   width: 180px;
   height: 132%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0)
+  );
   clip-path: polygon(46% 0, 54% 0, 100% 100%, 0 100%);
   opacity: 0.82;
 }
